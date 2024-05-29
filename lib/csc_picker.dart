@@ -549,6 +549,7 @@ class CSCPicker extends StatefulWidget {
     this.title,
     this.clearButtonContent = const Text("Clear"),
     this.showClearButton = false,
+    this.verticalPaddingHeight = 10,
   }) : super(key: key);
 
   final ValueChanged<String?>? onCountryChanged;
@@ -588,6 +589,8 @@ class CSCPicker extends StatefulWidget {
   final String cityDropdownLabel;
 
   final List<CscCountry>? countryFilter;
+
+  final double verticalPaddingHeight;
 
   @override
   CSCPickerState createState() => CSCPickerState();
@@ -827,11 +830,11 @@ class CSCPickerState extends State<CSCPicker> {
                 children: <Widget>[
                   countryDropdown(),
                   SizedBox(
-                    height: 10.0,
+                    height: verticalPaddingHeight,
                   ),
                   stateDropdown(),
                   SizedBox(
-                    height: 10.0,
+                    height: verticalPaddingHeight,
                   ),
                   cityDropdown()
                 ],
