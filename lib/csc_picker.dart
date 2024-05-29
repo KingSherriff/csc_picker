@@ -549,7 +549,7 @@ class CSCPicker extends StatefulWidget {
     this.title,
     this.clearButtonContent = const Text("Clear"),
     this.showClearButton = false,
-    this.dropDownHeight = 40,
+    this.dropdownHeight = 40,
     this.verticalPaddingHeight = 10,
   }) : super(key: key);
 
