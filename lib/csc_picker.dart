@@ -830,11 +830,11 @@ class CSCPickerState extends State<CSCPicker> {
                 children: <Widget>[
                   countryDropdown(),
                   SizedBox(
-                    height: verticalPaddingHeight,
+                    height: widget.verticalPaddingHeight,
                   ),
                   stateDropdown(),
                   SizedBox(
-                    height: verticalPaddingHeight,
+                    height: widget.verticalPaddingHeight,
                   ),
                   cityDropdown()
                 ],
