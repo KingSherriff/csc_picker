@@ -1,7 +1,7 @@
 # csc_picker 
 ![version](https://img.shields.io/badge/version-0.2.6-blue.svg)  ![version](https://img.shields.io/badge/NullSefety-True-brightgreen) 
 
-A flutter package to display a country, states, and cities. In addition it gives the possibility to select a list of countries, States and Cities depends on Selected, also you can search country, state, and city all around the world.
+A flutter package to display a country, states, and cities. In addition it gives the possibility to select a list of countries, States and Cities depends on Selected, also you can search country, state, and city all around the world. Made more adjustable for customizability.
 
 <div style="text-align:center">
 <table>
@@ -53,6 +53,8 @@ you will get feedback in onChanged functions
 <tr><td>dropdownHeadingStyle</td><td>TextStyle</td><td>To change DropdownDialog Heading style</td></tr>
 <tr><td>dropdownItemStyle</td><td>TextStyle</td><td>To change DropdownDialog Item style</td></tr>
 <tr><td>dropdownDialogRadius</td><td>double</td><td>To change DropdownDialogBox radius</td></tr>
+<tr><td>dropdownHeight</td><td>double</td><td>To change height of all dropdown bars</td></tr>
+<tr><td>verticalPaddingHeight</td><td>double</td><td>To change padding height between all dropdown bars</td></tr>
 <tr><td>searchBarRadius</td><td>double</td><td>To change search bar radius</td></tr>
 <tr><td>defaultCountry</td><td>CscCountry</td><td>To select default country</td></tr>
 <tr><td>disableCountry</td><td>Boolean</td><td>Disable country dropdown (Note: use it with default country)</td></tr>
