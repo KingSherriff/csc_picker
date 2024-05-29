@@ -591,6 +591,7 @@ class CSCPicker extends StatefulWidget {
 
   final List<CscCountry>? countryFilter;
 
+  final double dropdownHeight;
   final double verticalPaddingHeight;
 
   @override
