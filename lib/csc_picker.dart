@@ -549,6 +549,7 @@ class CSCPicker extends StatefulWidget {
     this.title,
     this.clearButtonContent = const Text("Clear"),
     this.showClearButton = false,
+    this.dropDownHeight = 40,
     this.verticalPaddingHeight = 10,
   }) : super(key: key);
 
@@ -915,6 +916,7 @@ class CSCPickerState extends State<CSCPicker> {
       dialogRadius: widget.dropdownDialogRadius,
       searchBarRadius: widget.searchBarRadius,
       label: widget.countrySearchPlaceholder,
+      dropdownHeight: widget.dropdownHeight,
       items: _country.map((String? dropDownStringItem) {
         return dropDownStringItem;
       }).toList(),
@@ -938,6 +940,7 @@ class CSCPickerState extends State<CSCPicker> {
       title: widget.stateDropdownLabel,
       placeHolder: widget.stateSearchPlaceholder,
       disabled: _states.length == 0 ? true : false,
+      dropdownHeight: widget.dropdownHeight,
       items: _states.map((String? dropDownStringItem) {
         return dropDownStringItem;
       }).toList(),
@@ -966,6 +969,7 @@ class CSCPickerState extends State<CSCPicker> {
       title: widget.cityDropdownLabel,
       placeHolder: widget.citySearchPlaceholder,
       disabled: _cities.length == 0 ? true : false,
+      dropdownHeight: widget.dropdownHeight,
       items: _cities.map((String? dropDownStringItem) {
         return dropDownStringItem;
       }).toList(),
